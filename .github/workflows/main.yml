@@ -17,3 +17,4 @@ jobs:
         dst_path: "/Docs/${{ github.repository }}.md"
         dst_owner: OkBeacon
         dst_repo_name: test-copycat-dest
+        dst_branch: main
