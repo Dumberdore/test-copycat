@@ -2,7 +2,7 @@ name: Copy ReadME
 on:
   push:
     branches:
-    - master
+    - main
     paths:
     - 'README.md'
 jobs:
