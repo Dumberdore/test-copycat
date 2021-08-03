@@ -1,0 +1,19 @@
+name: Copy ReadME
+on:
+  push:
+    branches:
+    - master
+    paths:
+    - 'README.md'
+jobs:
+  copy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: CopyCat
+      uses: OkBeacon/copycat-action@github-url-fix
+      with:
+        personal_token: "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"
+        src_path: /README.md
+        dst_path: "/Docs/${{ github.repository }}.md"
+        dst_owner: OkBeacon
+        dst_repo_name: test-copycat-dest
