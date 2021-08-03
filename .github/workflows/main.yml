@@ -14,6 +14,7 @@ jobs:
       with:
         personal_token: "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"
         src_path: /README.md
+        src_branch: main
         dst_path: "/Docs/${{ github.repository }}.md"
         dst_owner: OkBeacon
         dst_repo_name: test-copycat-dest
